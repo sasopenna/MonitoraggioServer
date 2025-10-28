@@ -1,0 +1,103 @@
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+	<Object ObjectType="MODefinition">
+	    <Name>ServerStatus</Name>
+	    <Description1><![CDATA[Questo oggetto dà informazioni sullo status di un server.]]></Description1>
+	    <ObjectID>9000</ObjectID>
+	  	<LWM2MVersion>1.0</LWM2MVersion>
+	    <ObjectVersion>1.0</ObjectVersion>
+	    <MultipleInstances>Single</MultipleInstances>
+	    <Mandatory>Optional</Mandatory>
+	    <Resources>
+			<Item ID="0">
+				<Name>Calcola RTT</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type></Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Calcola RTT.]]></Description>
+			</Item>
+			<Item ID="1">
+				<Name>Calcola Throughput</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type></Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Calcola Throughput.]]></Description>
+			</Item>
+			<Item ID="2">
+				<Name>Calcola Loss</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type></Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Calcola Loss.]]></Description>
+			</Item>
+			<Item ID="3">
+				<Name>Ultimo RTT</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Restituisce in formato JSON l'ultimo RTT calcolato e il timestamp di riferimento.]]></Description>
+			</Item>
+			<Item ID="4">
+				<Name>Ultimo Throughput</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Restituisce in formato JSON l'ultimo Throughput calcolato e il timestamp di riferimento.]]></Description>
+			</Item>
+			<Item ID="5">
+				<Name>Ultima Loss</Name>
+				<Operations>R</Operations>
+				<MultipleInstances>Multiple</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Restituisce in formato JSON l'ultima Loss calcolata e il timestamp di riferimento.]]></Description>
+			</Item>
+			<Item ID="6">
+				<Name>Stop Calcolo RTT</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type></Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Stop Calcolo RTT.]]></Description>
+			</Item>
+			<Item ID="7">
+				<Name>Stop Calcolo Throughput</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type></Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Stop Calcolo Throughput.]]></Description>
+			</Item>
+			<Item ID="8">
+				<Name>Stop Calcolo Loss</Name>
+				<Operations>E</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Optional</Mandatory>
+				<Type></Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units></Units>
+				<Description><![CDATA[Stop Calcolo Loss.]]></Description>
+			</Item>
+	    </Resources>
+  	</Object>
+</LWM2M>
